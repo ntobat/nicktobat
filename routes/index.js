@@ -16,7 +16,7 @@ router.get('/views/:name', function(req, res){
 
 /* catch-all */
 router.get('*', function(req, res, next) {
-  res.render('home', { title: 'nickyT' });
+  res.render('index', { title: 'nickyT' });
 });
 
 
