@@ -141,6 +141,10 @@ a, a:hover, a:visited{
   color: #4DDB92;
   text-decoration: none !important;
 }
+.wrapper{
+	margin-bottom: 30px;
+}
+
 
 /* ==================
      HEADER 
@@ -221,6 +225,11 @@ a, a:hover, a:visited{
   margin: 0 auto;
 }
 .navimg:hover{
+	padding: 3px;
+	background: #DBDB4D;
+	border: 6px solid #4D4DDB;
+}
+li.active .navimg{
 	padding: 3px;
 	background: #DBDB4D;
 	border: 6px solid #4D4DDB;
@@ -380,6 +389,9 @@ p.insta{
 		width: 75%;
 		float: none;
 		margin: 10px auto 40px;
+	}
+	.musing{
+		max-width: 75%;
 	}
 }
 

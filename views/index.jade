@@ -15,26 +15,27 @@ html(lang='en', ng-app='nickyT')
     script(src='/javascripts/controllers/portfolio.js')
     script(src='/javascripts/controllers/musings.js')
     script(src='/javascripts/controllers/photos.js')
+    script(src='/javascripts/controllers/nav.js')
   body
     header.header
       a(href='#/home')
         img#logo(src='/images/logo.png')
       h1.title
         a#titla(href='#/home') NICHOLAS TOBAT
-      ul.navbar
-        li.navitem
-          a.home(href='#/contact')
+      ul(class='navbar' ng-controller='NavCtrl')
+        li(class="navitem" ng-class="{ active: isCurrentPath('/contact') }")
+          a.contact(href='#/contact')
             img.navimg(src='/images/contact.png')
-        li.navitem
+        li(class="navitem" ng-class="{ active: isCurrentPath('/photos') }")
           a.photos(href='#/photos')
             img.navimg(src='/images/photos.png')
-        li.navitem
+        li(class="navitem" ng-class="{ active: isCurrentPath('/musings') }")
           a.musings(href='#/musings')
             img.navimg(src='/images/musings.png')
-        li.navitem
+        li(class="navitem" ng-class="{ active: isCurrentPath('/portfolio') }")
           a.portfolio(href='#/portfolio')
             img.navimg(src='/images/portfolio.png')
-        li.navitem
+        li(class="navitem" ng-class="{ active: isCurrentPath('/about') }")
           a.about(href='#/about')
             img.navimg(src='/images/about.png')
     
