@@ -1,0 +1,13 @@
+.content(ng-controller='MusingsCtrl')
+  h1.pagetitle Profound & Profane Musings
+  .wrapper
+    .musing(ng-repeat='musing in musings | orderBy: date:false')
+      h3 {{musing.name}}
+      p {{musing.date}}
+      .musing-txt
+        p(ng-class="{ 'hidden': showDetails }") {{musing.preview}}
+          a(ng-click="showDetails = ! showDetails")  ... (Read on)
+        p(ng-class="{ 'hidden': ! showDetails }") {{musing.body}}
+          a(ng-click="showDetails = ! showDetails")  (Read less)
+
+      

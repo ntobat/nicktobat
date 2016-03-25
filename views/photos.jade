@@ -1,0 +1,9 @@
+.content(ng-controller="PhotosCtrl")
+  h1.pagetitle Photos
+  .wrapper
+    p.insta For another perspective, check out my 
+      a(target='_blank' href='//instagram.com/nicktobat') instagram
+      span .
+    .photos(ng-repeat='photo in photos')
+      img(class='photo img-responsive' ng-src='{{photo.src}}')
+      p.caption {{photo.caption}}

@@ -1,0 +1,15 @@
+<div class="content" ng-controller="PortfolioCtrl">
+  <div class="wrapper">
+  	<div class="sample" ng-repeat="sample in samples" style="background: url('/images/{{sample.imgurl}}') center bottom no-repeat; background-size: 100%">
+  	  <a class="linkr">
+  	  	<div class="colortint">
+  	  	  <div class="textbox">
+  	  	    <p class="sample-name">{{sample.name}}</p>
+  	  	    <p class="sdesc">{{sample.sdesc}}</p>
+  	  	    <a target="_blank" ng-href="{{sample.link}}">Link</a>
+	  	    </div>
+  	    </div>
+	    </a>
+    </div>
+  </div>
+</div>

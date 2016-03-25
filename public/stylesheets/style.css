@@ -1,0 +1,412 @@
+/* ==================
+     FONTS 
+   ================== */
+@font-face {
+	font-family: Futura;
+	src: url(futura-m.ttf);
+}
+/* ==================
+     ANIMATIONS 
+   ================== */
+   /*
+@-webkit-keyframes shrink {
+  0%   { 
+  	width: 627.75px;
+  	visibility: visible;
+  	opacity: 1; }
+  100% { 
+  	width: 0;
+  	visibility: hidden;
+  	opacity: 0;
+  	position: absolute;
+  	left: -600px; }
+}
+@-moz-keyframes shrink {
+  0%   { 
+  	width: 627.75px;
+  	visibility: visible;
+  	opacity: 1; }
+  100% { 
+  	width: 0;
+  	visibility: hidden;
+  	opacity: 0;
+  	position: absolute;
+  	left: -600px; }
+}
+@-o-keyframes shrink {
+  0%   { 
+  	width: 627.75px;
+  	visibility: visible;
+  	opacity: 1; }
+  100% { 
+  	width: 0;
+  	visibility: hidden;
+  	opacity: 0;
+  	position: absolute;
+  	left: -600px; }
+}
+@keyframes shrink {
+  0%   { 
+  	width: 627.75px;
+  	visibility: visible;
+  	opacity: 1; }
+  100% { 
+  	width: 0;
+  	visibility: hidden;
+  	opacity: 0;
+  	position: absolute;
+  	left: -600px; }
+}
+
+@-webkit-keyframes hide {
+  0%   { 
+  	display: block;
+  }
+  100% { 
+  	display: none;
+  }
+}
+@-moz-keyframes hide {
+  0%   { 
+  	display: block;
+  }
+  100% { 
+  	display: none;
+  }
+}
+@-o-keyframes hide {
+  0%   { 
+  	display: block;
+  }
+  100% { 
+  	display: none;
+  }
+}
+@keyframes hide {
+  0%   { 
+  	display: block;
+  }
+  100% { 
+  	display: none;
+  }
+}
+@-webkit-keyframes levitate {
+  0%   { 
+  	bottom: -6px;
+  }
+  100% { 
+  	bottom: -12px;
+  }
+}
+@-moz-keyframes levitate {
+  0%   { 
+  	bottom: -6px;
+  }
+  100% { 
+  	bottom: -12px;
+  }
+}
+@-o-keyframes levitate {
+  0%   { 
+  	bottom: -6px;
+  }
+  100% { 
+  	bottom: -12px;
+  }
+}
+@keyframes levitate {
+  0%   { 
+  	bottom: -6px;
+  }
+  100% { 
+  	bottom: -12px;
+  }
+}
+*/
+/* ==================
+     BODY STYLES 
+   ================== */
+body, html {
+  font: 18px Futura, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+	background: #EBEBEB;
+}
+h1{
+	margin: 0;
+}
+a, a:hover, a:visited{
+  color: #4DDB92;
+  text-decoration: none !important;
+}
+
+/* ==================
+     HEADER 
+   ================== */
+.header{
+	width: 100%;
+	background: #DB4D4D;
+	padding-bottom: 6px;
+	margin-bottom: 50px;
+	overflow: auto;
+	height: 96px;
+	-webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+#logo{
+	position: absolute;
+	left: 4px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 400ms ease 200ms;
+  -moz-transition: all 400ms ease 200ms;
+  -o-transition: all 400ms ease 200ms;
+  transition: all 400ms ease 200ms;
+}
+.title{
+	font-size: 72px;
+	float: left;
+	margin-right: 16px;
+	-webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  position: absolute;
+}
+#titla{
+	color: #EBEBEB;
+}
+.navbar{
+	list-style: none;
+	padding: 0;
+	margin: 7px 12px;
+	max-width: 540px;
+	float: right;
+}
+.navitem{
+	display: inline-block;
+	margin: 0 12px;
+	position: relative;
+	width: 70px;
+	float: right;
+	-webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+
+}
+.navitem:after{
+	content: '';
+	height: 0;
+	width: 2px;
+	border-top: 5px solid black;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	bottom: -6px;
+	left: calc(50% - 5px);
+}
+.navimg{
+	border: 6px solid #EBEBEB;
+	border-radius: 100%;
+	-webkit-transition: padding 300ms ease;
+  -moz-transition: padding 300ms ease;
+  -o-transition: padding 300ms ease;
+  transition: padding 300ms ease;
+  display: block;
+  margin: 0 auto;
+}
+.navimg:hover{
+	padding: 3px;
+	background: #DBDB4D;
+	border: 6px solid #4D4DDB;
+}
+/* animate bottom arrow?
+.navimg:hover .navitem:after{
+	animation: levitate alternate 1s infinite ease;
+}
+*/
+/* ==================
+     CONTENT 
+   ================== */
+.content{
+	margin: 20px auto;
+}
+h1.pagetitle{
+	text-align: center;
+}
+
+/* Home */
+.comic-wrapper{
+	text-align: center;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.comic{
+	display: inline-block;
+	text-align: left;
+}
+#homepic{
+	text-align: center;
+	box-shadow: 8px 8px 4px #444;
+}
+.source{
+	margin-top: 16px;
+}
+
+/* About */
+.about-wrap{
+	max-width: 90%;
+	margin: 20px auto;
+}
+
+/* Portfolio */
+.sample{
+	float: left;
+	margin: 10px 12px;
+	width: calc(33.3% - 24px);
+	max-width: 476px;
+	/*box-shadow: 4px 4px 4px #444;*/
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+  position: relative;
+}
+.colortint{
+	height: 400px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.sample:hover .colortint{
+	background: 
+	  linear-gradient(
+      rgba(66, 144, 222, 0.9),
+      rgba(235, 235, 235, 0.6)
+    );
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+.textbox{
+	margin: 12px;
+	padding: 10px;
+	background-color: rgba(4, 4, 4, 0.7);
+	background-clip: content-box;
+	cursor: default;
+}
+.sample-name{
+	font-size: 22px;
+	color: #EBEBEB;
+	padding: 12px 10px 0 10px;
+}
+.sdesc{
+	font-size: 16px;
+	color: #EBEBEB;
+	padding: 0 10px 0 10px;
+}
+.sample-link{
+	font-size: 18px;
+	padding: 10px 10px 12px 10px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.sample-link:hover{
+	background-color: rgba(78,148,219, 0.8);
+}
+
+/* Musings */
+.musing{
+	cursor: default;
+	margin: 24px auto;
+	padding: 20px;
+	max-width: 768px;
+	box-shadow: 4px 4px 6px #444,
+							-2px 6px 2px #444;
+}
+.musing a{
+	cursor: pointer;
+}
+
+/* Photos */
+p.insta{
+	text-align: center;
+	margin-top: 20px;
+}
+.photos{
+	margin: 20px auto;
+	max-width: 70%;
+}
+.photo{
+	max-width: 100%;
+}
+
+/* ==================
+     MEDIA QUERIES 
+   ================== */
+@media screen and (max-width: 1110px){
+	.navbar li{
+		margin: 0 4px;
+	}
+
+}
+
+@media screen and (max-width: 1026px){
+	.title{
+		visibility: hidden;
+		transform: translateX(-800px);
+	}
+	#logo{
+		visibility: visible;
+		opacity: 1;
+	}
+	.navbar li{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 997px){
+	.sample{
+		width: 75%;
+		float: none;
+		margin: 10px auto 40px;
+	}
+}
+
+@media screen and (max-width: 460px){
+	#logo{
+		height: 70px;
+		width: auto;
+		top: 1px;
+	}
+	.navimg{
+		height: 50px;
+		width: auto;
+	}
+	.navitem{
+		width: 55px;
+	}
+	.header{
+		height: 76px;
+	}
+	p.insta{
+		font-size: 14px;
+	}
+	p.caption{
+		font-size: 14px;
+	}
+}
+
+
+
+
+

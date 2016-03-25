@@ -1,0 +1,41 @@
+doctype html
+html(lang='en', ng-app='nickyT')
+  head
+    title(ng-bind="header")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js')
+    script(src='/javascripts/app.js')
+    script(src='/javascripts/controllers/index.js')
+    script(src='/javascripts/controllers/about.js')
+    script(src='/javascripts/controllers/portfolio.js')
+    script(src='/javascripts/controllers/musings.js')
+    script(src='/javascripts/controllers/photos.js')
+  body
+    header.header
+      a(href='#/home')
+        img#logo(src='/images/logo.png')
+      h1.title
+        a#titla(href='#/home') NICHOLAS TOBAT
+      ul.navbar
+        li.navitem
+          a.home(href='#/contact')
+            img.navimg(src='/images/contact.png')
+        li.navitem
+          a.photos(href='#/photos')
+            img.navimg(src='/images/photos.png')
+        li.navitem
+          a.musings(href='#/musings')
+            img.navimg(src='/images/musings.png')
+        li.navitem
+          a.portfolio(href='#/portfolio')
+            img.navimg(src='/images/portfolio.png')
+        li.navitem
+          a.about(href='#/about')
+            img.navimg(src='/images/about.png')
+    
+    .main-wrap
+      div(ng-view)

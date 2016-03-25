@@ -1,0 +1,6 @@
+.content(ng-controller='IndexCtrl')
+  .comic-wrapper
+    .comic
+      img(class='img-responsive' id='homepic' ng-src='{{ randomComic.src }}')
+      p.source Source: 
+        a(target='_blank' ng-href='{{ randomComic.url }}') {{ randomComic.strip }}
