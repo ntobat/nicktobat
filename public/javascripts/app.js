@@ -45,6 +45,10 @@ angular.module('nickyT', ['ngRoute'])
 		.when('/contact', {
 			templateUrl: '/views/contact'
 		})
+		.when('/photo-test', {
+			templateUrl: '/views/photo-test',
+			controller: 'TestCtrl'				   // DON'T FORGET TO DELETE THIS
+		})
 		.otherwise({ redirectTo: '/home' });
 
 		$locationProvider.html5Mode(true);

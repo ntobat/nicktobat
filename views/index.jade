@@ -7,6 +7,7 @@ html(lang='en', ng-app='nickyT')
     link(rel="shortcut icon" href="/nickt-favicon.png")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/stylezz.css')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js')
@@ -17,6 +18,13 @@ html(lang='en', ng-app='nickyT')
     script(src='/javascripts/controllers/musings.js')
     script(src='/javascripts/controllers/photos.js')
     script(src='/javascripts/controllers/nav.js')
+    script(src='/javascripts/controllers/test.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-25801466-2', 'auto');
+      ga('send', 'pageview');
   body
     header.header
       a(href='/home')
@@ -27,12 +35,12 @@ html(lang='en', ng-app='nickyT')
         li(class="navitem" ng-class="{ active: isCurrentPath('/contact') }")
           a.contact(href='/contact')
             img.navimg(src='/images/contact.png')
-        li(class="navitem" ng-class="{ active: isCurrentPath('/photos') }")
-          a.photos(href='/photos')
-            img.navimg(src='/images/photos.png')
         li(class="navitem" ng-class="{ active: isCurrentPath('/musings') }")
           a.musings(href='/musings')
             img.navimg(src='/images/musings.png')
+        li(class="navitem" ng-class="{ active: isCurrentPath('/photos') }")
+          a.photos(href='/photos')
+            img.navimg(src='/images/photos.png')
         li(class="navitem" ng-class="{ active: isCurrentPath('/portfolio') }")
           a.portfolio(href='/portfolio')
             img.navimg(src='/images/portfolio.png')
