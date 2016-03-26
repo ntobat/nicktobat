@@ -21,29 +21,31 @@ angular.module('nickyT', ['ngRoute'])
 			controller: 'PortfolioCtrl',
 			title: 'Portfolio'
 		})
-		.when('/portfolio/:id', {
-			templateUrl: '/views/sample',
-			controller: 'SampleCtrl'
-		})
+//		.when('/portfolio/:id', {
+//			templateUrl: '/views/sample',
+//			controller: 'SampleCtrl'
+//		})
 		.when('/photos', {
 			templateUrl :'/views/photos',
 			controller: 'PhotosCtrl',
 			title: 'Portfolio'
 		})
-		.when('/photos/:id', {
-			templateUrl :'/views/photo',
-			controller: 'PhotoCtrl'
-		})
+//		.when('/photos/:id', {
+//			templateUrl :'/views/photo',
+//			controller: 'PhotoCtrl'
+//		})
 		.when('/musings', {
 			templateUrl: '/views/musings',
-			controller: 'MusingsCtrl' //CHANGE THIS BACK
+			controller: 'MusingsCtrl'
 		})
-		.when('/musings/:id', {
-			templateUrl: '/views/musing',
-			controller: 'MusingCtrl'
-		})
+//		.when('/musings/:id', {
+//			templateUrl: '/views/musing',
+//			controller: 'MusingCtrl'
+//		})
 		.when('/contact', {
 			templateUrl: '/views/contact'
 		})
 		.otherwise({ redirectTo: '/home' });
+
+		$locationProvider.html5Mode(true);
 }]);
