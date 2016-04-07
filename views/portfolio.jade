@@ -3,7 +3,8 @@
   .sample-wrap
     .sample(ng-repeat='sample in samples')
       a.samplink(target='_blank' href='{{sample.link}}')
-        img(src='/images/{{sample.imgurl}}')
+        img.flat(src='/images/{{sample.imgurl}}')
+        img.real(src='/images/{{sample.realimg}}')
       p.sample-name {{ sample.name }}
       p.sdesc {{ sample.sdesc }}
       a.sample-link(target='_blank' ng-href='{{ sample.link }}') Launch Site 

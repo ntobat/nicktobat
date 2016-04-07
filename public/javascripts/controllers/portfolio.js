@@ -7,6 +7,7 @@ angular.module('nickyT')
   		sdesc: 'Occupational Therapy business in Adelaide, South Australia. Built with WordPress and custom styles.',
   		link: '//www.learnsensegrow.com.au',
   		imgurl: 'lsg.png',
+      realimg: 'lsg-real.png',
   		id: 1
   	},
   	{
@@ -14,6 +15,7 @@ angular.module('nickyT')
   		sdesc: 'Local family bookbinding business in Adelaide, South Australia. Built from scratch with Bootstrap and custom styles.',
   		link: '//www.wharley.com.au',
   		imgurl: 'wharley.png',
+      realimg: 'whar-real.png',
   		id: 2
   	},
   	{
@@ -21,6 +23,7 @@ angular.module('nickyT')
   		sdesc: 'Boutique financial planning firm in Northern Virginia. Built with GoDaddy Website Builder and custom styles.',
   		link: '//www.gordonandcocpas.com',
   		imgurl: 'gordon.png',
+      realimg: 'gord-real.png',
   		id: 3
   	}
   ];

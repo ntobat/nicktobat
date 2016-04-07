@@ -300,6 +300,7 @@ h1.pagetitle{
 	padding: 24px 0;
 	border-radius: 5%;
 	text-align: center;
+	position: relative;
 	background-color: #DBD494;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -308,6 +309,35 @@ h1.pagetitle{
 }
 .sample:hover{
 	border-radius: 15%;
+}
+img.flat{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+img.real{
+	border-radius: 6%;
+	visibility: hidden;
+	opacity: 0;
+	width: 320px;
+	height: 200px;
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	margin-left: -160px;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.sample:hover img.real{
+	visibility: visible;
+	opacity: 1;	
+}
+.sample:hover img.flat{
+	visibility: hidden;
+	opacity: 0;
 }
 .samplink{
 
@@ -396,6 +426,14 @@ p.caption{
 	display: none;
 }
 
+.under{
+	text-align: center;
+	background-color: #00ACAC;
+}
+.under p{
+	vertical-align: bottom;
+}
+
 /* ==================
      MEDIA QUERIES 
    ================== */
@@ -423,6 +461,12 @@ p.caption{
 	}
 }
 
+@media screen and (max-width: 600px){
+	.sample{
+		max-width: 100%;
+		width: auto;
+	}
+}
 @media screen and (max-width: 460px){
 	#logo{
 		height: 70px;

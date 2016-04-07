@@ -8,6 +8,21 @@ angular.module('nickyT')
 			url: 'http://wondermark.com/601/'
 		},
 		{
+			strip: 'Cyanide and Happiness',
+			src: 'http://files.explosm.net/comics/Rob/prisoncamp.png',
+			url: 'http://explosm.net/comics/1645/'
+		},
+		{
+			strip: 'Cyanide and Happiness',
+			src: 'http://files.explosm.net/comics/Dave/idoabigbrusheverydayandiamsoteef.png',
+			url: 'http://explosm.net/comics/3241/'
+		},
+		{
+			strip: 'Pictures in Boxes',
+			src: 'http://www.picturesinboxes.com/comics/2013-11-23-rubix.jpg',
+			url: 'http://www.picturesinboxes.com/2013/11/23/rubix-cube/'
+		},
+		{
 			strip: 'Wondermark',
 			src: 'http://wondermark.com/c/2011-09-19-757wolf.gif',
 			url: 'http://wondermark.com/757/'
