@@ -320,12 +320,12 @@ img.real{
 	border-radius: 6%;
 	visibility: hidden;
 	opacity: 0;
-	width: 320px;
-	height: 200px;
+	width: 300px;
+	height: 187.5px;
 	position: absolute;
 	top: 24px;
 	left: 50%;
-	margin-left: -160px;
+	margin-left: -150px;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
