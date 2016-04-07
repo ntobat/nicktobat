@@ -141,7 +141,7 @@ a, a:hover, a:visited{
   color: #4DDB92;
   text-decoration: none !important;
 }
-.wrapper{
+.wrapper, .about-wrap, .sample-wrap{
 	margin-bottom: 30px;
 }
 
@@ -153,13 +153,17 @@ a, a:hover, a:visited{
 	width: 100%;
 	background: #DB4D4D;
 	padding-bottom: 6px;
-	margin-bottom: 50px;
-	overflow: auto;
+	margin-bottom: 40px;
 	height: 96px;
+	display: flex;
+	justify-content: space-between;
 	-webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
+}
+div.titlename{
+	margin-right: auto;
 }
 #logo{
 	position: absolute;
@@ -173,13 +177,10 @@ a, a:hover, a:visited{
 }
 .title{
 	font-size: 72px;
-	float: left;
-	margin-right: 16px;
 	-webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
-  position: absolute;
 }
 #titla{
 	color: #EBEBEB;
@@ -187,30 +188,26 @@ a, a:hover, a:visited{
 .navbar{
 	list-style: none;
 	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 2;
 	margin: 7px 12px;
 	max-width: 540px;
-	float: right;
 }
 .navitem{
-	display: inline-block;
-	margin: 0 12px;
-	position: relative;
-	width: 70px;
-	float: right;
+	width: 68px;
 	-webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
-
 }
 .navitem:after{
 	content: '';
 	height: 0;
-	width: 2px;
 	border-top: 5px solid black;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	position: absolute;
+	position: relative;
 	bottom: -6px;
 	left: calc(50% - 5px);
 }
@@ -224,11 +221,29 @@ a, a:hover, a:visited{
   display: block;
   margin: 0 auto;
 }
+/*.hoverp{
+	position: absolute;
+	width: 100%;
+	margin-left: -50%;
+	left: 50%;
+	top: 22px;
+	display: none;
+	pointer-events: none;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+} */
 .navimg:hover{
 	padding: 3px;
 	background: #DBDB4D;
 	border: 6px solid #4D4DDB;
 }
+/*.navimg:hover .navimg:not(:hover){
+  -webkit-filter: blur(2px);
+}
+/*.navimg:hover + .hoverp{
+	display: block;
+}*/
 li.active .navimg{
 	padding: 3px;
 	background: #DBDB4D;
@@ -274,20 +289,31 @@ h1.pagetitle{
 }
 
 /* Portfolio */
+.sample-wrap{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
 .sample{
-	float: left;
-	margin: 10px 12px;
-	width: calc(33.3% - 24px);
-	max-width: 476px;
-	/*box-shadow: 4px 4px 4px #444;*/
+	width: 33%;
+	margin-top: 16px;
+	padding: 24px 0;
+	border-radius: 5%;
+	text-align: center;
+	background-color: #DBD494;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
-  position: relative;
 }
-.colortint{
-	height: 400px;
+.sample:hover{
+	border-radius: 15%;
+}
+.samplink{
+
+}
+/*.colortint{
+	height: 500px;
 	visibility: hidden;
 	opacity: 0;
 	-webkit-transition: all 300ms ease;
@@ -316,17 +342,17 @@ h1.pagetitle{
 	font-size: 22px;
 	color: #EBEBEB;
 	padding: 12px 10px 0 10px;
-}
+}*/
 .sdesc{
 	font-size: 16px;
 	color: #EBEBEB;
-	padding: 0 10px 0 10px;
+	padding: 0 48px;
 }
 .sample-link{
 	font-size: 18px;
-	padding: 10px 10px 12px 10px;
-	display: block;
-	width: 100%;
+	padding: 8px 10px 12px 10px;
+	margin: 12px 0;
+	width: 75%;
 	height: 100%;
 }
 .sample-link:hover{
@@ -352,24 +378,27 @@ p.insta{
 	margin: 10px auto;
 	max-width: 70%;
 }
+.photowrap{
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 .photos{
-	margin: 20px auto;
-	max-width: 70%;
+	margin: 0;
 }
 .photo{
-	max-width: 100%;
+	max-height: 120px;
+	border: 2px solid #EBEBEB;
+}
+p.caption{
+	display: none;
 }
 
 /* ==================
      MEDIA QUERIES 
    ================== */
-@media screen and (max-width: 1110px){
-	.navbar li{
-		margin: 0 4px;
-	}
-
-}
-
 @media screen and (max-width: 1026px){
 	.title{
 		visibility: hidden;
@@ -379,15 +408,14 @@ p.insta{
 		visibility: visible;
 		opacity: 1;
 	}
-	.navbar li{
-		margin: 0;
+	.titlename{
+		width: 90px;
 	}
 }
 
 @media screen and (max-width: 997px){
 	.sample{
-		width: 75%;
-		float: none;
+		width: 60%;
 		margin: 10px auto 40px;
 	}
 	.musing{

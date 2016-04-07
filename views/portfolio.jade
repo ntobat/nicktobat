@@ -1,10 +1,10 @@
 .content(ng-controller='PortfolioCtrl')
   h1.pagetitle Portfolio
-  .wrapper
-    .sample(ng-repeat='sample in samples' style="background: url('/images/{{sample.imgurl}}') center bottom no-repeat; background-size: 100%")
-      .colortint
-        .textbox
-          p.sample-name {{ sample.name }}
-          p.sdesc {{ sample.sdesc }}
-          a.sample-link(target='_blank' ng-href='{{ sample.link }}') Visit Site 
-            i(class='glyphicon glyphicon-new-window')
+  .sample-wrap
+    .sample(ng-repeat='sample in samples')
+      a.samplink(target='_blank' href='{{sample.link}}')
+        img(src='/images/{{sample.imgurl}}')
+      p.sample-name {{ sample.name }}
+      p.sdesc {{ sample.sdesc }}
+      a.sample-link(target='_blank' ng-href='{{ sample.link }}') Launch Site 
+        i(class='glyphicon glyphicon-new-window')

@@ -6,21 +6,21 @@ angular.module('nickyT')
   		name: 'Learn Sense Grow',
   		sdesc: 'Occupational Therapy business in Adelaide, South Australia. Built with WordPress and custom styles.',
   		link: '//www.learnsensegrow.com.au',
-  		imgurl: 'ipad.png',
+  		imgurl: 'lsg.png',
   		id: 1
   	},
   	{
   		name: 'William Harley & Son',
   		sdesc: 'Local family bookbinding business in Adelaide, South Australia. Built from scratch with Bootstrap and custom styles.',
   		link: '//www.wharley.com.au',
-  		imgurl: 'macbook.png',
+  		imgurl: 'wharley.png',
   		id: 2
   	},
   	{
   		name: 'Gordon & Co',
   		sdesc: 'Boutique financial planning firm in Northern Virginia. Built with GoDaddy Website Builder and custom styles.',
   		link: '//www.gordonandcocpas.com',
-  		imgurl: 'imac.png',
+  		imgurl: 'gordon.png',
   		id: 3
   	}
   ];
