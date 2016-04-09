@@ -301,7 +301,7 @@ h1.pagetitle{
 	border-radius: 5%;
 	text-align: center;
 	position: relative;
-	background-color: #DBD494;
+	background-color: #86ADB6;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -320,12 +320,12 @@ img.real{
 	border-radius: 6%;
 	visibility: hidden;
 	opacity: 0;
-	width: 300px;
-	height: 187.5px;
+	width: 310px;
+	height: 197.5px;
 	position: absolute;
 	top: 24px;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -155px;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -384,6 +384,7 @@ img.real{
 	margin: 12px 0;
 	width: 75%;
 	height: 100%;
+	color: #DBDB4D !important;
 }
 .sample-link:hover{
 	background-color: rgba(78,148,219, 0.8);
