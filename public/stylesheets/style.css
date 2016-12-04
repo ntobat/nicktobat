@@ -408,9 +408,15 @@ p.insta{
 	text-align: center;
 	margin: 10px auto;
 	max-width: 70%;
+	font-size: 20px;
+}
+p.images{
+	text-align: center;
+	margin: 10px auto;
+	max-width: 70%;
 }
 .photowrap{
-	max-width: 80%;
+	max-width: 85%;
 	margin: 0 auto;
 	padding: 12px 0;
 	display: flex;
@@ -422,7 +428,7 @@ p.insta{
 	margin: 0;
 }
 .photo{
-	max-height: 120px;
+	max-height: 250px;
 	border: 2px solid #EBEBEB;
 	border-radius: 5px;
 }
@@ -430,6 +436,7 @@ p.caption{
 	display: none;
 }
 
+/*
 .under{
 	text-align: center;
 	background-color: #00ACAC;
@@ -437,6 +444,7 @@ p.caption{
 .under p{
 	vertical-align: bottom;
 }
+*/
 
 /* ==================
      MEDIA QUERIES 
