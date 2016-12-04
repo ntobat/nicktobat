@@ -1,12 +1,8 @@
 .content(ng-controller="PhotosCtrl")
-  .under
-    p
-      img(src='/images/construction.png')
-      span &nbsp;&nbsp;Under construction! Hardhats required.
   h1.pagetitle Photos
   p.insta For another perspective, check out my 
     a(target='_blank' href='//instagram.com/nicktobat') instagram
-      span .
+    span .
   .photowrap
     a.photos(href='{{photo.src}}' ng-repeat='photo in photos')
       img(class='photo img-responsive' ng-src='{{photo.src}}')

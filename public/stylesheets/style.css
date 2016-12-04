@@ -412,9 +412,11 @@ p.insta{
 .photowrap{
 	max-width: 80%;
 	margin: 0 auto;
+	padding: 12px 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	background-color: #fff;
 }
 .photos{
 	margin: 0;
@@ -422,6 +424,7 @@ p.insta{
 .photo{
 	max-height: 120px;
 	border: 2px solid #EBEBEB;
+	border-radius: 5px;
 }
 p.caption{
 	display: none;
