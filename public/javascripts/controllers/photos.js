@@ -28,6 +28,20 @@ angular.module('nickyT')
 		{
 			src: '/images/outdoor.png',
 			caption: ' '
+		},
+		{
+			src: '/images/love.png',
+			caption: ' '
+		}
+	];
+	$scope.larges = [
+		{
+			src: '/images/love-lg.png',
+			caption: ' '
+		},
+		{
+			src: '/images/hoverbot-lg.png',
+			caption: ' '
 		}
 	];
 }]);

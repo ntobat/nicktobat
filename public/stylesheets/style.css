@@ -435,6 +435,24 @@ p.images{
 p.caption{
 	display: none;
 }
+button.expand{
+	position: relative;
+}
+/*lightbox*/
+.lightbox{
+	max-width: 85%;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.6);
+	position: absolute;
+	top: 120;
+	margin: 0 auto;
+}
+.lbphoto{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+}
 
 /*
 .under{
