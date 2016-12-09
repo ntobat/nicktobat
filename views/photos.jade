@@ -10,8 +10,9 @@
     .smallz(ng-repeat='photo in photos')
       a.photos(href='' ng-click='photo.showme=true')
         img(class='photo img-responsive' ng-src='{{photo.src}}')
-//      .lightbox(ng-show='photo.showme')
-//        .largez(ng-repeat='large in larges')
-//          a.photos(href='')
-//            a.close(ng-click='photo.showme=false') x
-//            img(class='lbphoto img-responsive' ng-src='{{large.src}}')
+      .lightbox(ng-show='photo.showme')
+        .largez
+          a.photos(href='')
+            a.close(ng-click='photo.showme=false') x
+            img(class='lbphoto img-responsive' ng-src='{{larges[photo.numbah].src}}')
+        .overlaid(ng-class="{shown: photo.showme}")

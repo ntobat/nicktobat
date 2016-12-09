@@ -435,23 +435,43 @@ p.images{
 p.caption{
 	display: none;
 }
-button.expand{
-	position: relative;
+div.smallz{
 }
 /*lightbox*/
-.lightbox{
-	max-width: 85%;
-	margin: 0 auto;
+div.lightbox{
 	background-color: rgba(255,255,255,0.6);
-	position: absolute;
-	top: 120;
-	margin: 0 auto;
+	position: fixed;
+	max-height: 90%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: url('/images/lbbg.png');
+	background-size: cover;
+
 }
-.lbphoto{
-	max-width: 100%;
-	max-height: 100%;
+img.lbphoto{
+}
+a.close{
+	position: fixed;
+	top: -18px;
+	right: -32px;
+	font-size: 46px;
+}
+div.overlaid{
+	position: fixed;
+	top: 96px;
+	left: 0;
+	z-index: 1000;
+	width: 12000px;
+	height: 100%;
+	background-color: rgba(255,255,255,0.6);
+	display: none;
+}
+.shown{
 	display: block;
-	margin: 0 auto;
+}
+.hided{
+	display: none;
 }
 
 /*
