@@ -1,5 +1,5 @@
 angular.module('nickyT')
-.controller('PhotosCtrl', ['$scope', function PhotosCtrl($scope){
+.controller('ImagesCtrl', ['$scope', function ImagesCtrl($scope){
 	$scope.photos = [
 		{
 			src: '/images/toucan.png',

@@ -1,0 +1,65 @@
+angular.module('nickyT')
+.controller('VcuCtrl', ['$scope', function VcuCtrl($scope){
+	$scope.sec1answers = [
+		{
+			name: 'Who Am I?',
+			body: "I’m Nick. Affectionately, I’m Nicky. Physically, I'm a 5’10” male with glasses, a gap-toothed smile, and a lean build. Emotionally, I’m a placid lake protected by a serene forest - rarely is my surface disturbed. Academically, I’m a dedicated life-long learner, a porous sponge absorbing everything in reach. Socially, I teeter between extroversion and introversion, and I don’t much care to take a Meyers-Briggs test and put myself in a box. Philosophically, I consider myself an absurd existentialist - aware of the universe’s indifference towards me, and happy to create and pursue my own meaning of life. Gradually, I'm discovering that “who I am” is a fluid concept, impossible to pin down in a paragraph, or ten paragraphs, as my body and mind grow and change with each passing day.\n\nI’m good at suffering, adapting, and learning - I tend to undergo all three simultaneously. These qualities go hand in hand with my love for figuring things out. As is mentioned elsewhere in my application, I am self-taught when it comes to design, and I could not have made it this far without the aforementioned (and adept Googling). I am not one to shy away from challenge; on the contrary, I embrace it with grit and a grin. I am extremely good at dabbling, which you can find me doing with any number of different activities on a given day. Lastly, what I consider one of my most important strengths: I am quite good at emanating positivity, with an infectious smile never far from my face.\n",
+			get preview(){
+				var arr = this.body.split(" ");
+				var pre = [];
+				for(var x = 0; x < 10; x++){
+					pre.push(arr[x]);
+				}
+				return pre.join(" ");
+			}
+		},
+		{
+			name: 'An Influential Place',
+			body: "For one hot, dry, Australian summer, I lived in my car. No, it wasn’t a van, or even an SUV - it was a dusty maroon 1993 Subaru Sportswagon. Over the course of a sunny, sweaty, frustrating, woefully-inadequately-equipped weekend in Adelaide, SA, my girlfriend and I removed the backseats and built a wooden bedframe topped with a layer of foam padding. On December 26, 2015, we set out for the island of Tasmania by way of car-ferry from Melbourne.\n\nIt was a surreal existence, living on the fringes of society, only interacting with social & commercial systems when I needed a fill-up or to restock food stores. No jobs, people, social obligations, apps or screens clamored for my attention; my daily worries consisted mainly of Where will I go?, What will I do & see?, and What’s for dinner? A successful day was judged by levels of fatigue and layers of grime. Living this way taught me more than I realized at the time, and much more than I can tastefully fit into this essay, but here is a sample: the incredible importance of good communication, routine, and proactivity; how to suffer gracefully, adapt, deal with boredom, assess risk, and put others before yourself; and the aches, pains, and magic of living frugally yet to the absolute fullest. Allow me to travel down memory lane for a moment and delve a bit deeper into some of the items on this list.\n\nWhen you live in the back of a car with another person, for months, with scant access to showers, in a space that is too small for either of you to fully stretch out and with only 6 inches between your face and the roof, communication becomes crucial to general well-being. In most of our lives, we do not tell each other how we really feel, but instead what we believe the other person wants to hear. Perhaps this is just to be polite, or a strategy to reduce conflict; whatever the case, it was not an option in this situation. For example, if I woke up after a bad night’s sleep and was in a grumpy mood, I would immediately tell Suzy how I was feeling. She, having had her share of nights like mine, would understand and do her best to not resent me as I worked through the grumpiness. We were completely open and honest with each other to an extent that I have never reached in any other relationship, because we were living a hard life and didn’t want to make it any harder with half-truths and misinformation. Now I try to incorporate frank honesty into my relationships, while still understanding the importance of the social constructs around language that define the way we interact with each other.\n\nSuffering was a big theme of this adventure. About six months before we left, Suzy and I adopted a fasting routine that had us skip breakfast and lunch twice a week. We decided to extend this to three days a week in order to save money and storage space. It’s difficult to voluntarily skip meals when you know you’ve got food in the trunk. It makes you short-tempered, tired, weak, and out of whack. It’s easy to give in to these feelings; it’s hard to accept them and suffer without complaint. I can’t say I always did the latter, but I can say I always tried. Due to the nature of the trip, we were constantly walking, hiking, climbing, and sweating, but we rarely had access to a shower. We would go for days upon dirty days of discomfort, using the occasional public bathroom for a quick wash of the pits n’ bits (you can figure out what that means). The suffering I endured on this trip helped me become a better person. It gave me a new perspective that I always come back to when I feel like complaining about so-called first-world problems. I have lived through worse, and now I feel like I can live through almost anything and do so gracefully. I embrace suffering and I understand that it is important to personal growth.\n",
+			get preview(){
+				var arr = this.body.split(" ");
+				var pre = [];
+				for(var x = 0; x < 10; x++){
+					pre.push(arr[x]);
+				}
+				return pre.join(" ");
+			}	
+		},
+		{
+			name: 'How Did I Get Here?',
+			body: "I’d like to think that I led myself here, but with a moment’s reflection I know that’s not true. As with many of the pivotal moments in my life thus far, I have arrived at this point via a series of fortunate coincidences, or, more colloquially, luck. This is not to say that I didn’t work hard to get where I am - on the contrary, as a completely self-taught designer, I have had to face and overcome many challenges and struggle up more than a few steep learning curves. I can’t trace the exact path that I’ve taken to get here, but I can highlight some of the important steps on the way.\n\nAs I worked my way through a degree in Foreign Affairs from the University of Virginia, I was not a designer. When I moved to San Francisco and took a job as a technical recruiter, I was not a designer, but I was suddenly exposed to a world of technology and design that I was previously completely unaware of. My job gave me a tantalizing glimpse into some cutting-edge startups doing amazing things, and immediately I wanted in. But I had no skills, I didn’t speak the language(s); HTML to me was nothing more than a search keyword. I knew nothing and wanted it all. So I had to build a bridge from my little island of befuddlement and wonder to the grand, streets-paved-with-silicon continent of technology. I taught myself the basics of web design and development using free online courses, and I published my first website. There I was, on the shores of this brave new world, proud of what I had accomplished but with so much more to learn.\n\nIt was time to establish my foundation. I began paying for higher-level web development courses. It was also around this time that I purchased Affinity Designer on a whim, a vector graphics program which was to remain unopened on my laptop for the next few months. I moved to Australia with my girlfriend and helped support our travel and adventure addiction with freelance gigs, building websites for local businesses. Eventually I decided it was time to do a little self-branding and make a website for myself. As I considered different layout and design options, the Affinity Designer icon on my dock caught my eye. I opened that bad boy up and launched headfirst into months of experimentation, frustration, and growing joy - I now consider myself more graphic designer than web designer.\n\nSo I’d built my bridge and established my foundation - the only way left to go was up! It was time to build a ladder. I finished up my year abroad in Australia, leaving behind some great friends and a massive unpaid traffic ticket, and moved to Richmond. As I searched for a job I continued to experiment with graphic design, moving from solely vector art into a combination of vector shapes and raster brushes. I was recruited by an e-learning company about a position as a Learning Specialist, and began designing and developing online courses for a wide variety of clients, adding “instructional” to my list of design prefixes. I was once again exposed to an emerging field of technology and design, and I finally got to get my hands dirty with Adobe products such as Photoshop and Illustrator.\n\nSince settling in Richmond, I have found opportunities to apply my skills to businesses and individuals in the community: I designed a logo for an independent 3D printing shop; I created album art for an up-and-coming rapper; and I am working with an emerging local business to establish their brand and develop marketing materials. I moved to a new apartment in March and as one of my roommates recounted tales of what she was doing as a Brandcenter student, my brain slowly came to an obvious conclusion: I should apply there! It sounds right up my alley! And so, here I am.\n",
+			get preview(){
+				var arr = this.body.split(" ");
+				var pre = [];
+				for(var x = 0; x < 10; x++){
+					pre.push(arr[x]);
+				}
+				return pre.join(" ");
+			}	
+		},
+		{
+			name: 'Failure',
+			body: "I got home from work and went out to the backyard to bring my beautiful cat, Monster, inside before it got dark; I was vaguely informed of the presence of a dog in the house. I brought Monster upstairs to put him on the porch where he could lounge safely until the dog left. As I stepped through the threshold, the dog, which was on the porch, immediately lunged for Monster and he violently wriggled and clawed his way out of my grasp. He landed on the ground and the dog locked its jaws around his middle. They whirled around the room in a tragic parody of a cartoon scuffle and I tackled the dog, yanking the everloving shit out of his collar, trying with everything I had to make him let go. My roommate, hearing the noise, rushed into the room and helped me disentangle them. It was too late. Monster lay on the ground, heaving and wheezing, internal organs crushed, and a few minutes later, died. I failed to save him. What did I do about it? I cried. I buried him in the yard. The scratches on my hands turned into scars. I adopted two new cats and resented them. I endured months of depression. My girlfriend broke up with me. I got a tattoo in his memory. I have not, never will, and can not do anything about it, because he is gone. Eventually, though, I realized I needed to stop reacting to his death and start to respond. I went to grief counseling. I wrote him a letter. I sat quietly in my room and thought about what he meant to me and what he means to me still. I found a better home for the two new cats. And now I attempt to extend the unconditional, unending love I had and still have for him into all aspects of my life.\n",
+			get preview(){
+				var arr = this.body.split(" ");
+				var pre = [];
+				for(var x = 0; x < 10; x++){
+					pre.push(arr[x]);
+				}
+				return pre.join(" ");
+			}	
+		},
+		{
+			name: 'What The Heck Is XD?!',
+			body: "Experience Design is less of a job title or discipline and more of a perspective or framework for thinking about and solving design problems. Experience Designers use a variety of skills and technologies, design-related and otherwise, to create a seamless and consistent customer experience across all touchpoints (wherever the customer and brand meet). An Experience Design mindset pushes you to think beyond just making a great product or advertisement, to how it fits into the overarching brand image of the company and how it will affect the user’s experience with and perception of the brand. An Experience Designer does research into the user demographics, developing user personas and ensuring the product is built with the user in mind. S/he sketches ideas for the product design, and eventually upgrades them to wireframes, mock-ups, and prototypes (perhaps with help from the visual designer). S/he must test the product (and with it, the experience) by putting it into the hands of users and incorporating their feedback into the final design. The work of an Experience Designer is varied, and never really done - they must continually adapt the experience to changing technology, demographics, and demands (from both clients and users).\n",
+			get preview(){
+				var arr = this.body.split(" ");
+				var pre = [];
+				for(var x = 0; x < 10; x++){
+					pre.push(arr[x]);
+				}
+				return pre.join(" ");
+			}	
+		}
+	]
+}])

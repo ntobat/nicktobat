@@ -1,4 +1,4 @@
-.content(ng-controller="PhotosCtrl")
+.content(ng-controller="ImagesCtrl")
   h1.pagetitle Images
   br
   p.insta For another perspective, check out my 
@@ -15,4 +15,4 @@
           a.photos(href='')
             a.close(ng-click='photo.showme=false') x
             img(class='lbphoto img-responsive' ng-src='{{larges[photo.numbah].src}}')
-        .overlaid(ng-class="{shown: photo.showme}")
+  div(id="overlaid")

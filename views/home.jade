@@ -1,4 +1,9 @@
 .content(ng-controller='IndexCtrl')
+  .vcu-banner
+    img.banner-img(class='img-responsive' src='/vcu-img/triangle.png' style='height: 50px; width: auto;')
+    h1 isiting from the Brandcenter? Click 
+      a(href='/vcu') here!
+  br
   .comic-wrapper
     .comic
       img(class='img-responsive' id='homepic' ng-src='{{ randomComic.src }}')

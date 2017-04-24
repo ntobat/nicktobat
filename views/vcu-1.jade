@@ -1,0 +1,20 @@
+.content(ng-controller='VcuCtrl')
+  .vcu-banner
+    a.app-nav(href='/vcu') 
+      span(class="glyphicon glyphicon-arrow-left")
+      span &nbsp;&nbsp;Previous
+    img.banner-img(class='img-responsive' src='/vcu-img/triangle.png' style='height: 50px; width: auto;')
+    h1.pagetitle &nbsp;&nbsp;SECTION 1
+    a.app-nav(href='/vcu-2') 
+      span Next&nbsp;&nbsp;
+      span(class="glyphicon glyphicon-arrow-right")
+  h2(style='text-align: center') My Story So Far...
+  .wrapper
+    .answer(ng-repeat='answer in sec1answers | orderBy: date:false')
+      h3 {{answer.name}}
+      p {{answer.date}}
+      .answer-txt
+        p(ng-class="{ 'hidden': showDetails }") {{answer.preview}}
+          a(ng-click="showDetails = ! showDetails")  ... (Read on)
+        p(ng-class="{ 'hidden': ! showDetails }") {{answer.body}}
+          a(ng-click="showDetails = ! showDetails")  (Read less)
